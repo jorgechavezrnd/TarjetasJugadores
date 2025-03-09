@@ -115,10 +115,10 @@ body {
 }
 
 /* Voltear la tarjeta cuando se hace clic en Detalles */
-.tarjeta:hover .frontal {
-  transform: rotateY(180deg); /* Voltea la cara frontal */
-}
+/*.tarjeta:hover .frontal {*/
+/*  transform: rotateY(180deg);*/ /* Voltea la cara frontal */
+/*}*/
 
-.tarjeta:hover .posterior {
-  transform: rotateY(0deg); /* Muestra la cara posterior */
-}
+/*.tarjeta:hover .posterior {*/
+/*  transform: rotateY(0deg);*/ /* Muestra la cara posterior */
+/*}*/

@@ -1,16 +1,17 @@
 // Obtener elementos del DOM
 const verDetallesButton = document.getElementById('verDetalles');
 const volverButton = document.getElementById('volver');
-const tarjeta = document.querySelector('.tarjeta');
+const tarjetaFrontal = document.querySelector('.tarjeta .frontal');
+const tarjetaPosterior = document.querySelector('.tarjeta .posterior');
 
 // Función para voltear la tarjeta
 verDetallesButton.addEventListener('click', () => {
-  tarjeta.style.transform = 'rotateY(180deg)'; // Voltear la tarjeta
-  console.log('Ver Detalles clickeado');
+  tarjetaFrontal.style.transform = 'rotateY(180deg)';
+  tarjetaPosterior.style.transform = 'rotateY(0deg)';
 });
 
 // Función para volver a la cara frontal
 volverButton.addEventListener('click', () => {
-  tarjeta.style.transform = 'rotateY(0deg)'; // Volver a la cara inicial
-  console.log('Volver clickeado');
+  tarjetaPosterior.style.transform = 'rotateY(180deg)';
+  tarjetaFrontal.style.transform = 'rotateY(0deg)';
 });
